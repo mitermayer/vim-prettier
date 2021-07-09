@@ -50,15 +50,9 @@ endfunction
 
 " Adapted from https://github.com/farazdagi/vim-go-ide
 function! s:getCharPosition(line, col) abort
-    if &encoding !=# 'utf-8'
-        " On utf-8 enconding we can't just use bytes so we need to make sure we can count the
-        " characters, we do that by adding the text into a temporary buffer and counting the chars
-        let l:buf = a:line == 1 ? '' : (join(getline(1, a:line - 1), "\n") . "\n")
-        let l:buf .= a:col == 1 ? '' : getline('.')[:a:col - 2]
-        return len(iconv(l:buf, &encoding, 'utf-8'))
-    endif
-    " On non utf-8 the line byte should match the character
-    return line2byte(a:line) + (a:col - 2)
+  let l:buf = a:line == 1 ? '' : (join(getline(1, a:line - 1), "\n") . "\n")
+  let l:buf .= a:col == 1 ? '' : getline('.')[:a:col - 2]
+  return strchars(l:buf)
 endfun
 
 " Returns [start, end] byte range when on visual mode
