@@ -34,12 +34,12 @@
     mem "^8.0.0"
     php-parser "3.0.2"
 
-"@prettier/plugin-ruby@^0.8.0":
-  version "0.8.0"
-  resolved "https://registry.yarnpkg.com/@prettier/plugin-ruby/-/plugin-ruby-0.8.0.tgz#e305cb31310d865805b2db7ddfc2cc9273149505"
-  integrity sha512-EbhlgBzeHv6P0jnjMf6MCmgz28C6MCB0yU81enR7605mrUzUO8wg7RMaWCJsbfp7TRs5u9OqimMmib1Ivi4c0A==
+"@prettier/plugin-ruby@^1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@prettier/plugin-ruby/-/plugin-ruby-1.6.1.tgz#14489985513a72e052b57c1cf9beae288880faa8"
+  integrity sha512-PGDCATgVTQz0s/NB9nStiXVCIr+hG/XnKeAO/kguaHrNf8VwCpP5Ul+/KQao0z0QFBy2PDY8kWptfDQCa7WMXg==
   dependencies:
-    prettier "^1.16.4"
+    prettier ">=1.10"
 
 "@prettier/plugin-xml@^0.7.2":
   version "0.7.2"
@@ -2660,7 +2660,7 @@ prettier-plugin-svelte@^2.3.1:
   resolved "https://registry.yarnpkg.com/prettier-plugin-svelte/-/prettier-plugin-svelte-2.3.1.tgz#926184a490549688dbea0a8d61c1b1ae20218368"
   integrity sha512-F1/r6OYoBq8Zgurhs1MN25tdrhPw0JW5JjioPRqpxbYdmrZ3gY/DzHGs0B6zwd4DLyRsfGB2gqhxUCbHt/D1fw==
 
-prettier@>=1.10, prettier@^1.16.4:
+prettier@>=1.10:
   version "1.19.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.19.1.tgz"
   integrity sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
